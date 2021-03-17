@@ -41,7 +41,7 @@
 
             @foreach($ProdutoDetalhes as $ProdutoDetalhe)
           
-              <a href="#"><img class="card-img-top" src="{{asset("images/products/produto_detalhe/$ProdutoDetalhe->imagem.$ProdutoDetalhe->extensao")}}" alt=""></a>
+              <a href="#"><img class="card-img-top" src="{{asset("images/products/$ProdutoDetalhe->imagem.$ProdutoDetalhe->extensao")}}" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="#">{{$ProdutoDetalhe->nome}}</a>

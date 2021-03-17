@@ -22,6 +22,7 @@ Route::get('/', function ()
 */
 
 Auth::routes();
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/carrinho', [App\Http\Controllers\CarrinhoController::class, 'listar'])->name('carrinho');
 Route::post('/insert/{idProduto}', [App\Http\Controllers\CarrinhoController::class, 'InserirPedido'])->name('insert');
